@@ -1,0 +1,57 @@
+DELETE http://localhost:8080/remove/2
+
+#####
+GET http://localhost:8080/all
+
+
+############
+PUT http://localhost:8000/charges
+
+
+########
+GET http://localhost:8080/view
+#####
+
+
+PUT http://localhost:8080/change/3
+Content-Type: application/json
+
+ANuuuu
+
+###################
+GET http://localhost:8000/ekart/view
+###############
+
+POST http://localhost:8000/ekart/add
+Content-Type: application/json
+
+{
+    "parcelId": 5,
+    "receiverName": "Eniyaa",
+    "parcelItemName": "Watch",
+    "receiverAddress": "Namakkal",
+    "receiverContact": 74265251632,
+    "itemPrice": 5000.0,
+    "itemStatus": "Delivered",
+    "executiveName": "Joker and Witch"
+  }
+
+  #########
+  PUT http://localhost:8000/ekart/status/1
+  Content-Type: text/plain
+
+  "Delivered"
+  #########
+  PUT http://localhost:8000/ekart/status/2
+  Content-Type: application/json
+
+  {
+
+  }
+
+  #########################
+
+PUT http://localhost:8000/ekart/status/1
+Content-Type: text/plain
+
+Delivered

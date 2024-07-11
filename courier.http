@@ -1,0 +1,40 @@
+GET http://localhost:8000/ekart/get
+###############
+
+POST http://localhost:8000/ekart/add
+Content-Type: application/json
+
+{
+    
+    "receiverName": "Aishu",
+    "parcelItemName": "Mobile",
+    "receiverAddress": "Salem",
+    "receiverContact": 74265251632,
+    "itemPrice": 6000,
+    "itemStatus": "Delivered",
+    "executiveName": "realme"
+  }
+
+  #########
+ 
+PUT http://localhost:8000/ekart/status/1
+Content-Type: text/plain
+
+Delivered
+###########
+PUT http://localhost:8000/ekart/update
+Content-Type: application/json
+
+{
+    "parcelId":5,
+    "receiverName": "Aarti",
+    "parcelItemName": "Mobile",
+    "receiverAddress": "Salem",
+    "receiverContact": 74265251632,
+    "itemPrice": 28000,
+    "itemStatus": "Delivered",
+    "executiveName": "vivo"
+  }
+
+  #################
+  DELETE http://localhost:8000/ekart/delete/102
